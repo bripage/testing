@@ -51,7 +51,7 @@ mc = sst.Component("mc", "memHierarchy.MemController")
 mc.addParams({
     "clock" : "3300MHz"
 })
-mc_backend = mc.setSubComponent("mc_backend", "memHierarchy.simpleMem")
+mc_backend = mc.setSubComponent("backend", "memHierarchy.simpleMem")
 mc_backend.addParams({
     "mem_size" : "32GB"
 })
