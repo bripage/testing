@@ -42,7 +42,7 @@ for i in range(3):
         "id" : 0,
         "clock" : "2GHz"
     })
-    cpu_gen = cpu1.setSubComponent("generator", "miranda.STREAMBenchGenerator")
+    cpu_gen = cpu.setSubComponent("generator", "miranda.STREAMBenchGenerator")
     cpu_gen.addParams({
         "n" : 1000,
         "verbose" : 10
