@@ -57,7 +57,7 @@ mc_backend.addParams({
 })
 
 c1_to_l1 = sst.Link("c1_to_l1")
-c1_to_l1.connect((cpu1, "cache", "300ps"),(cpu1_l1, "high_network_0", "300ps"))
+c1_to_l1.connect((cpu1, "cache_link", "300ps"),(cpu1_l1, "high_network_0", "300ps"))
 
 c1l1_to_l2 = sst.Link("c1l1_to_l2")
 c1l1_to_l2.connect((cpu1_l1, "low_network_0", "300ps"),(cpu1_l2, "high_network_0", "300ps"))
