@@ -9,7 +9,7 @@ cpu1.addParams({
 cpu1_gen = cpu1.setSubComponent("generator", "miranda.STREAMBenchGenerator")
 cpu1_gen.addParams({
     "n" : 1000,
-    "verbose" : 2
+    "verbose" : 10
 })
 
 cpu1_l1 = sst.Component("c1_l1", "memHierarchy.Cache")
