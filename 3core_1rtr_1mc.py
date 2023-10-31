@@ -17,7 +17,7 @@ cpu1_l1.addParams({
     "cache_frequency" : "2GHz",
     "cache_size" : "32KB",
     "associativity" : 8,
-    "access_latency_cycle" : 4
+    "access_latency_cycles" : 4
 })
 
 cpu1_l2 = sst.Component("c1_l2", "memHierarchy.Cache")
@@ -25,7 +25,7 @@ cpu1_l2.addParams({
     "cache_frequency" : "2GHz",
     "cache_size" : "6MB",
     "associativity" : 32,
-    "access_latency_cycle" : 8
+    "access_latency_cycles" : 8
 })
 
 rtr = sst.Component("rtr", "merlin.hr_router")
