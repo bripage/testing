@@ -1,0 +1,2 @@
+CMakeLists.txt not found in C:\Users\Brian\Documents\GitHub\testing Select CMakeLists.txt
+Toolchains are not configured Configure Disable profile
