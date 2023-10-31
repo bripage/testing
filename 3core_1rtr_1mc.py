@@ -57,8 +57,8 @@ for i in range(3):
         "access_latency_cycles" : 4
     })
 
-    cpu1_l2 = sst.Component("c%d_l2"%i, "memHierarchy.Cache")
-    cpu1_l2.addParams({
+    cpu_l2 = sst.Component("c%d_l2"%i, "memHierarchy.Cache")
+    cpu_l2.addParams({
         "cache_frequency" : "2GHz",
         "cache_size" : "6MB",
         "associativity" : 32,
