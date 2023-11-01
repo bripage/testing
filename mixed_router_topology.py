@@ -18,7 +18,7 @@ bus_counter = 0
 rtr = sst.Component("rtr%d"%router_counter, "merlin.hr_router")
 rtr.addParams({
     "id" : router_counter,
-    "num_ports" : 9,
+    "num_ports" : 10,
     "link_bw" : "56Gb/s",
     "flit_size" : "512B",
     "xbar_bw" : "56Gb/s",
@@ -71,7 +71,7 @@ for r in range(2):
     rtr = sst.Component("rtr%d"%router_counter, "merlin.hr_router")
     rtr.addParams({
         "id" : router_counter,
-        "num_ports" : 9,
+        "num_ports" : 10,
         "link_bw" : "56Gb/s",
         "flit_size" : "512B",
         "xbar_bw" : "56Gb/s",
