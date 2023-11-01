@@ -65,7 +65,7 @@ dc_to_bus = sst.Link("dc_to_mc")
 dc_to_bus.connect((dc, "memory", "300ps"),(bus, "high_network_0", "300ps"))
 
 bus_to_mc = sst.Link("bus_to_mc")
-bus_to_mc.connect((bus, "low_network_0", "300ps"),(mc, "direc_link", "300ps"))
+bus_to_mc.connect((bus, "low_network_0", "300ps"),(mc, "direct_link", "300ps"))
 
 for r in range(2):
     rtr = sst.Component("rtr%d"%router_counter, "merlin.hr_router")
