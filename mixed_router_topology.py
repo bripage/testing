@@ -29,7 +29,7 @@ rtr.addParams({
 })
 rtr_top = rtr.setSubComponent("topology", "merlin.mesh")
 rtr_top.addParams({
-    "shape" : "4x4x1",
+    "shape" : "2x2x1",
     "width" : "1x1x1",
     "local_ports" : 4
 })
@@ -82,7 +82,7 @@ for r in range(2):
     })
     rtr_top = rtr.setSubComponent("topology", "merlin.mesh")
     rtr_top.addParams({
-        "shape" : "4x4x1",
+        "shape" : "2x2x1",
         "width" : "1x1x1",
         "local_ports" : 4
     })
