@@ -2,21 +2,6 @@ import os
 import sst
 import argparse
 
-DEBUG_L1 = 1
-DEBUG_MEM = 10
-DEBUG_LEVEL = 10
-MEM_SIZE = 1024*1024*1024-1
-
-parser = argparse.ArgumentParser()
-parser.add_argument("-t", "--tiles_per_socket", type=int, help="Number of tiles per node socket"
-parser.add_argument("-b", "--binary", type=string, help="Binary to execute on the RISC-V cores")
-parser.add_argument("-v", "--verbosity", type=int, help="increase output verbosity")
-args = parser.parse_args()
-
-BINARY = args.binary
-VERBOSE = args.verbosity
-TILES_PER_SOCKET = args.tiles_per_socket
-
 cores = []
 core_counter = 0
 l1caches = []
