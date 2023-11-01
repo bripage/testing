@@ -145,11 +145,11 @@ for r in range(2):
         core_counter += 1
 
 cr0_to_cr1 = sst.Link("cr0_to_cr1")
-cr0_to_cr1.connect((core_routers[0], "port6", "300ps"),(core_routers[1], "port4, "300ps"))
+cr0_to_cr1.connect((core_routers[0], "port6", "300ps"),(core_routers[1], "port4", "300ps"))
 
 cr0_to_ar0 = sst.Link("cr0_to_ar0")
-cr0_to_ar0.connect((core_routers[0], "port6", "300ps"),(agg_routers[0], "port6, "300ps"))
+cr0_to_ar0.connect((core_routers[0], "port6", "300ps"),(agg_routers[0], "port6", "300ps"))
 
 cr1_to_ar0 = sst.Link("cr0_to_ar1")
-cr1_to_ar0.connect((core_routers[1], "port6", "300ps"),(agg_routers[0], "port7, "300ps"))
+cr1_to_ar0.connect((core_routers[1], "port6", "300ps"),(agg_routers[0], "port7", "300ps"))
 
